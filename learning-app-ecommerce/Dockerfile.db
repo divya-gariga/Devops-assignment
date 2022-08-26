@@ -1,0 +1,3 @@
+FROM mysql
+ENV MYSQL_ROOT_PASSWORD=root
+COPY assets/db-load-script.sql /docker-entrypoint-initdb.d/
